@@ -43,5 +43,9 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "jquery": "^3.2.1"
   }
 }

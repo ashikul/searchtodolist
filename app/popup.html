@@ -8,13 +8,63 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
+  <link href="styles/bulma.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
   <!-- endbuild -->
 </head>
 
 <body>
-  <h1>'Allo, 'Allo!</h1>
-  yoooo
+  <div class="todo-header">
+    <h3>Search To-Do List</h3>
+  </div>
+
+  <div class="todo-main-actions">
+    <a class="button is-small is-link is-outlined">
+      Search All
+    </a>
+    <a class="button is-small is-success is-outlined ">
+      Complete All
+    </a>
+    <a class="button is-small is-danger is-outlined">
+      Delete All
+    </a>
+  </div>
+
+  <div class="todo-list">
+    <div class="example">
+      <a class="panel-block">
+
+        marksheet
+        <a class="delete"></a>
+      </a>
+      <a class="panel-block">
+
+        minireset.css
+        <span class="panel-icon">
+          <a class="delete"></a>
+        </span>
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="todo-search-container">
+    <div class="field has-addons">
+      <p class="control is-expanded">
+        <input class="input" type="text" placeholder="Seach query">
+      </p>
+      <p class="control">
+        <a class="button is-info is-outlined">
+          Add
+        </a>
+      </p>
+    </div>
+  </div>
+
 
   <!-- build:js scripts/popup-vendor.js -->
   <!-- bower:js -->
@@ -22,6 +72,7 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/popup.js -->
+  <script src="scripts/jquery.min.js"></script>
   <script src="scripts/popup.js"></script>
   <!-- endbuild -->
 </body>

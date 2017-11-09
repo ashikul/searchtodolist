@@ -1,3 +1,18 @@
+html {
+  min-width: 0;
+}
+
 body {
-  padding: 20px;
+  padding: 3px 5px;
+  margin: 0;
+  width: 270px;
+}
+
+.todo-search-container {
+  margin: 2px 0;
+}
+
+.todo-main-actions {
+  margin: 2px 0;
+  margin-left: 3px;
 }
