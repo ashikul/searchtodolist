@@ -15,22 +15,49 @@
 
 <body>
   <div class="todo-header">
-    <h3>Search To-Do List</h3>
+    <h3>To-do Search List</h3>
   </div>
 
   <div class="todo-main-actions">
-    <a class="button is-small is-link is-outlined">
+    <a class="button is-small is-link is-outlined" id="search-all">
       Search All
     </a>
-    <a class="button is-small is-success is-outlined ">
+    <a class="button is-small is-success is-outlined" id="complete-all">
       Complete All
     </a>
-    <a class="button is-small is-danger is-outlined">
+    <a class="button is-small is-danger is-outlined" id="delete-all">
       Delete All
     </a>
   </div>
 
-  <div class="todo-list">
+  <ul class="tasks">
+    <!-- <li data-index="13" data-priority="0">
+      <div class="task"></div>
+      <textarea class="editable"></textarea>
+      <div class="checkbox"></div>
+      <a class="delete"></a>
+    </li> -->
+  </ul>
+
+  <!-- <li data-index="13" data-priority="0">
+    <div class="task">e</div>
+    <textarea class="editable">e</textarea>
+    <div class="checkbox"></div>
+    <div class="edit" title="Edit" data-i18n-title="edit"></div>
+    <div class="action"></div>
+    <div class="drag"></div>
+    <div class="menu" style="display: block;">
+      <div class="priority" data-i18n="priority">Priority:</div>
+      <div class="pr" data-index="1">1</div>
+      <div class="pr" data-index="2">2</div>
+      <div class="pr" data-index="3">3</div>
+      <div class="pr active" data-index="0">0</div>
+      <div class="delete" data-i18n="delete">Delete</div>
+    </div>
+    <div class="save" title="Save" data-i18n-title="save"></div>
+  </li> -->
+
+  <!-- <div class="todo-list">
     <div class="example">
       <a class="panel-block">
 
@@ -46,7 +73,7 @@
 
       </a>
 
-    </div>
+    </div> -->
 
 
   </div>
@@ -55,10 +82,10 @@
   <div class="todo-search-container">
     <div class="field has-addons">
       <p class="control is-expanded">
-        <input class="input" type="text" placeholder="Seach query">
+        <input class="input" type="text" placeholder="Search query">
       </p>
       <p class="control">
-        <a class="button is-info is-outlined">
+        <a class="button is-info is-outlined" id="add">
           Add
         </a>
       </p>
