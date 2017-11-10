@@ -173,8 +173,8 @@ input[type="checkbox"] {
   border: none;
   /* background: #F8F8F8;*/
   box-shadow: none;
-  border-top: 1px solid #ededed;
-  border-bottom: 3px solid #ededed;
+  border-top: 2px solid #ededed;
+  border-bottom: 1px solid #ededed;
   /* border-radius: 2px; */
   /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); */
 }
@@ -306,6 +306,7 @@ label[for='toggle-all'] {
 
 .todo-list li .destroy:after {
   content: '×';
+  /* content: '✖'; */
 }
 
 .todo-list li:hover .destroy {
