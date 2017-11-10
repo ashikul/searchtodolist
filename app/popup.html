@@ -8,94 +8,50 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
-  <link href="styles/bulma.css" rel="stylesheet">
+  <link href="styles/todo.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
   <!-- endbuild -->
 </head>
 
 <body>
-  <div class="todo-header">
-    <h3>To-do Search List</h3>
-  </div>
-
-  <div class="todo-main-actions">
-    <!-- 
-    <div class="checkbox check-all" id="complete-all" style="display: block;"></div> -->
-    <a class="button is-small is-link is-outlined" id="search-all`">
-      Search All
-    </a>
-
-    <!-- <a class="delete" id="delete-all"></a> -->
-    <a class="button is-small is-success is-outlined" id="complete-all">
-      Complete All
-    </a>
-    <a class="button is-small is-danger is-outlined" id="delete-all">
-      Delete Completed  
-    </a>
-  </div>
-
-  <ul class="tasks">
-    <!-- <li data-index="13" data-priority="0">
-      <div class="task"></div>
-      <textarea class="editable"></textarea>
-      <div class="checkbox"></div>
-      <a class="delete"></a>
-    </li> -->
-  </ul>
-
-  <!-- <li data-index="13" data-priority="0">
-    <div class="task">e</div>
-    <textarea class="editable">e</textarea>
-    <div class="checkbox"></div>
-    <div class="edit" title="Edit" data-i18n-title="edit"></div>
-    <div class="action"></div>
-    <div class="drag"></div>
-    <div class="menu" style="display: block;">
-      <div class="priority" data-i18n="priority">Priority:</div>
-      <div class="pr" data-index="1">1</div>
-      <div class="pr" data-index="2">2</div>
-      <div class="pr" data-index="3">3</div>
-      <div class="pr active" data-index="0">0</div>
-      <div class="delete" data-i18n="delete">Delete</div>
-    </div>
-    <div class="save" title="Save" data-i18n-title="save"></div>
-  </li> -->
-
-  <!-- <div class="todo-list">
-    <div class="example">
-      <a class="panel-block">
-
-        marksheet
-        <a class="delete"></a>
-      </a>
-      <a class="panel-block">
-
-        minireset.css
-        <span class="panel-icon">
-          <a class="delete"></a>
-        </span>
-
-      </a>
-
-    </div> -->
-
-
-  </div>
-
-
-  <div class="todo-search-container">
-    <div class="field has-addons">
-      <p class="control is-expanded">
-        <input class="input" type="text" placeholder="Search query">
-      </p>
-      <p class="control">
-        <a class="button is-info is-outlined" id="add">
-          Add
-        </a>
-      </p>
-    </div>
-  </div>
-
+  <section class="todoapp">
+    <header class="header">
+      <h1>todos</h1>
+      <input class="new-todo" placeholder="What needs to be done?" autofocus>
+    </header>
+    <section class="main">
+      <input class="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all as complete</label>
+      <ul class="todo-list"></ul>
+    </section>
+    <footer class="footer">
+      <span class="todo-count"></span>
+      <ul class="filters">
+        <li>
+          <a href="#/" class="selected">All</a>
+        </li>
+        <li>
+          <a href="#/active">Active</a>
+        </li>
+        <li>
+          <a href="#/completed">Completed</a>
+        </li>
+      </ul>
+      <button class="clear-completed">Clear completed</button>
+    </footer>
+  </section>
+  <footer class="info">
+    <p>Double-click to edit a todo</p>
+    <p>Created by
+      <a href="http://twitter.com/oscargodson">Oscar Godson</a>
+    </p>
+    <p>Refactored by
+      <a href="https://github.com/cburgmer">Christoph Burgmer</a>
+    </p>
+    <p>Part of
+      <a href="http://todomvc.com">TodoMVC</a>
+    </p>
+  </footer>
 
   <!-- build:js scripts/popup-vendor.js -->
   <!-- bower:js -->
@@ -103,8 +59,16 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/popup.js -->
-  <script src="scripts/jquery.min.js"></script>
-  <script src="scripts/popup.js"></script>
+  <!-- <script src="scripts/jquery.min.js"></script> -->
+  <!-- <script src="scripts/popup.js"></script> -->
+
+  <script src="scripts/controller.js"></script>
+  <script src="scripts/helpers.js"></script>
+  <script src="scripts/model.js"></script>
+  <script src="scripts/store.js"></script>
+  <script src="scripts/template.js"></script>
+  <script src="scripts/view.js"></script>
+  <script src="scripts/app.js"></script>
   <!-- endbuild -->
 </body>
 

@@ -15,3 +15,9 @@ gulp build
 You can also distribute your project with compressed file using the Chrome Developer Dashboard at Chrome Web Store. This command will compress your app built by gulp build command.
 
 gulp package
+
+
+
+
+Credits:
+https://github.com/tastejs/todomvc/tree/master/examples/vanillajs

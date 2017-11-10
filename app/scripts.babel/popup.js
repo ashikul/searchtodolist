@@ -34,8 +34,14 @@ $(document).ready(function () {
       
 
     });
-  $('#check').click(function (e) {});
-  $('#delete').click(function (e) {});
+
+    $('#check').click(function (e) {
+      
+    });
+    
+    $('#delete').click(function (e) {
+      
+  });
 
 
 });
