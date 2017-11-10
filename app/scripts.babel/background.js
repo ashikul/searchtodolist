@@ -5,7 +5,7 @@
 // });
 
 // chrome.browserAction.setBadgeText({
-//   text: '\'Allo'
+//   text: 'TODO'
 // });
 
 // console.log('\'Allo \'Allo! Event Page for Browser Action');

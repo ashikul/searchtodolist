@@ -275,6 +275,9 @@
       self.view.render('contentBlockVisibility', {
         visible: todos.total > 0
       });
+
+      updateBadge(todos.active);
+
     });
   };
 
@@ -314,6 +317,12 @@
 
     this.view.render('setFilter', currentPage);
   };
+
+  function updateBadge(count) {
+    chrome.browserAction.setBadgeText({
+      text: '' + count
+    });
+  }
 
   // Export to window
   window.app = window.app || {};

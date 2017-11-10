@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "searchtodolist",
+    "message": "To-do Search List",
     "description": "A todo list of things you want to search"
   },
   "appDescription": {
-    "message": "Search To Do List",
+    "message": "Simple Search To-do List",
     "description": "A todo list of things you want to search"
   }
 }
