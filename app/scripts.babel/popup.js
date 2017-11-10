@@ -30,7 +30,10 @@ $(document).ready(function () {
   });
   
     
-  $('#add').click(function (e) {});
+    $('#add').click(function (e) {
+      
+
+    });
   $('#check').click(function (e) {});
   $('#delete').click(function (e) {});
 
