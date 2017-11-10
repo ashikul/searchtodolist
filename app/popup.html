@@ -16,8 +16,12 @@
 <body>
   <section class="todoapp">
     <header class="header">
-      <h1>todos</h1>
-      <input class="new-todo" placeholder="What needs to be done?" autofocus>
+      <div class="header-row">
+        <h1>To-do Search List</h1>
+        <a class="search-button">Search All</a>
+      </div>
+
+      <input class="new-todo" placeholder="Enter search queries" autofocus>
     </header>
     <section class="main">
       <input class="toggle-all" type="checkbox">
@@ -26,7 +30,7 @@
     </section>
     <footer class="footer">
       <span class="todo-count"></span>
-      <ul class="filters">
+      <!-- <ul class="filters">
         <li>
           <a href="#/" class="selected">All</a>
         </li>
@@ -36,22 +40,10 @@
         <li>
           <a href="#/completed">Completed</a>
         </li>
-      </ul>
+      </ul> -->
       <button class="clear-completed">Clear completed</button>
     </footer>
   </section>
-  <footer class="info">
-    <p>Double-click to edit a todo</p>
-    <p>Created by
-      <a href="http://twitter.com/oscargodson">Oscar Godson</a>
-    </p>
-    <p>Refactored by
-      <a href="https://github.com/cburgmer">Christoph Burgmer</a>
-    </p>
-    <p>Part of
-      <a href="http://todomvc.com">TodoMVC</a>
-    </p>
-  </footer>
 
   <!-- build:js scripts/popup-vendor.js -->
   <!-- bower:js -->
